@@ -1,5 +1,7 @@
 Name : Yashi Srivastava
+
 ID Number : 2000123
+
 Project Description:
 The project will aim on creating a predictive model on one of the dataset present in public domain. Initially, I intend to start with amcat dataset, which has scores of candidates in various domains, and their past academic profile, and placement package is given. The predictive model should be capable of predictive the placement package range on new set of entries with a good accuracy.
 
