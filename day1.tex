@@ -11,7 +11,7 @@
 \subtitle{A Predictive Classification Model}
 \author{Yashi Srivastava}
 \institute{Talentsprint}
-\date{19th June 2019}
+\date{24th June 2019}
 
 \begin{document}
 
@@ -32,22 +32,22 @@
 \begin{frame}{Motivation}
 \pause
  \begin{fullpageitemize}
-  \item \begin{center}A large proportion of students take AMCAT examination.\end{center}
-  \item \begin{center}They wait for placement offers and then plan their strategy further. \end{center}
-  \item \begin{center}With our tool, students will come to know about their probable package beforehand, so they can plan appropriately. \end{center}
+  \item \begin{center}
+  Ability to plan strategies beforehand.\end{center}
  \end{fullpageitemize}
 \end{frame}
 \begin{frame}{Languages/Libraries Used}
 \pause
  \begin{fullpageitemize}
-  \item\begin{center} Python on colab by Google \end{center}
+  \item\begin{center} Python3 \end{center}
   \item\begin{center}  \end{center}
-  \item\begin{center} scikit learn, pandas\end{center}
+  \item\begin{center} scikit learn, pandas, matplotlib\end{center}
  \end{fullpageitemize}
 \end{frame}
 \begin{frame}{Dataset Description}
 \pause
  \begin{fullpageitemize}
+  \item\begin{center} AMCAT AMEO Dataset \end{center}
   \item\begin{center} 38 features \end{center}
   \item\begin{center} 4000 tuples \end{center}
   \item\begin{center} 11 features of string data-type\end{center}
@@ -62,12 +62,62 @@
   \item\begin{center}Comparing various classification algorithms (2 days) \end{center}
  \end{fullpageitemize}
 \end{frame}
+\begin{frame}{Data - Preprocessing}
+\pause
+ \begin{fullpageitemize}
+  \item\begin{center}Board of school segregation \end{center}
+  \item\begin{center}Segregating job city by code is data approach. \end{center}
 
+ \end{fullpageitemize}
+\end{frame}
+\begin{frame}{Data - Preprocessing (Continued)}
+\pause
+ \begin{fullpageitemize}
+  \item\begin{center}Identifying non numeric columns of dataset. \end{center}
+  \item\begin{center}Segregating Salary in 2 classes. \end{center}
+ \end{fullpageitemize}
+\end{frame}
+\begin{frame}{Feature Reduction}
+\pause
+ \begin{fullpageitemize}
+  \item\begin{center}Reducing 8 columns of  technical score to 3 columns.\end{center}
+  \item\begin{center}Dropping columns which had no effect on the Salary. \end{center}
+ \end{fullpageitemize}
+\end{frame}
+\begin{frame}{Outlier Detection}
+\pause
+ \begin{fullpageitemize}
+  \item\begin{center}Outliers was identified using 1st and 3rd quartiles. \end{center}
+  \item\begin{center}Rows having data outside the identified range were dropped.  \end{center}
+  \pause
+  \item\begin{center}From 3999 rows, 640 rows were dropped.  \end{center}
+ \end{fullpageitemize}
+\end{frame}
+\begin{frame}{Applying Machine Learning}
+\pause
+ \begin{fullpageitemize}
+  \item\begin{center}Data was split into train and test. \end{center}
+  \item\begin{center}Models were trained on a number of algorithms, and results were compared.  \end{center}
+ \end{fullpageitemize}
+\end{frame}
+\begin{frame}{Comparing different Algorithm}
+\pause
+ \begin{fullpageitemize}
+  \item \includegraphics{Capture.JPG}
+ \end{fullpageitemize}
+\end{frame}
 \begin{frame}{Challenges}
 \pause
  \begin{fullpageitemize}
   \item\begin{center} A lot of missing values. \end{center}
   \item\begin{center} Dealing with semantically similar but differently spelled strings. \end{center}
+ \end{fullpageitemize}
+ \end{frame}
+ \begin{frame}{Further Work}
+\pause
+ \begin{fullpageitemize}
+  \item\begin{center} Improving accuracy beyond 71\% of Gradient Boosting Algorithm. \end{center}
+  \item\begin{center} Consuming the model. \end{center}
  \end{fullpageitemize}
  \end{frame}
  \begin{frame}{}
